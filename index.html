@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deal Vault | Off-Market Real Estate, Delivered to the Right Buyers First</title>
+
+<!-- HubSpot tracking / collected-forms script: this is a public loader script (like Google Analytics),
+     it does NOT expose any private API key. Once "Collect forms not created in HubSpot" is turned on
+     in HubSpot Settings > Marketing > Forms, any form submitted on this page auto-creates/updates a
+     Contact record using the field names below. -->
+<script type="text/javascript" id="hs-script-loader" async defer src="https://js.hs-scripts.com/246893417.js"></script>
+
+<style>
+  :root{
+    --navy:#1F3864;
+    --navy-dark:#12233F;
+    --navy-darker:#0B182C;
+    --gold:#C09B4C;
+    --gold-light:#E4CE9A;
+    --gold-soft:#F3E7CD;
+    --gold-deep:#8A6C2F;
+    --grey-bg:#F5F6F8;
+    --text:#23282F;
+    --muted:#5B6472;
+    --white:#FFFFFF;
+    --border:#E3E6EA;
+    --green:#1F7A3D;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;scrollbar-color:var(--gold) var(--grey-bg);scrollbar-width:thin;}
+  ::-webkit-scrollbar{width:10px;height:10px;}
+  ::-webkit-scrollbar-track{background:var(--grey-bg);}
+  ::-webkit-scrollbar-thumb{background:linear-gradient(var(--gold),var(--gold-deep));border-radius:10px;}
+  ::-webkit-scrollbar-thumb:hover{background:var(--gold-deep);}
+  #scrollProgress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-light));z-index:400;width:0%;}
+  body{font-family:'Segoe UI',Helvetica,Arial,sans-serif;color:var(--text);background:var(--white);line-height:1.65;overflow-x:hidden;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px;position:relative;z-index:2;}
+  h1,h2,h3,h4{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-weight:700;letter-spacing:.2px;}
+  .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-size:13px;font-weight:700;}
+  strong,b{color:var(--navy);}
+  .gold-text{color:var(--gold-deep);}
+  .divider{height:4px;width:64px;background:linear-gradient(90deg,var(--gold),var(--gold-light));border-radius:2px;margin:14px auto 0;}
+  .divider.left{margin:14px 0 0;}
+
+  .btn{display:inline-block;padding:14px 30px;border-radius:3px;font-weight:700;font-size:15px;letter-spacing:.4px;cursor:pointer;border:2px solid transparent;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;position:relative;overflow:hidden;}
+  .btn-gold{background:linear-gradient(100deg,var(--gold) 0%,#D6B26C 100%);color:var(--navy-dark);}
+  .btn-gold:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(192,155,76,.45);}
+  .btn-gold:after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:shine 3.2s ease-in-out infinite;}
+  @keyframes shine{0%{left:-60%;}45%{left:130%;}100%{left:130%;}}
+  .btn-outline{background:transparent;color:var(--white);border-color:rgba(255,255,255,.6);}
+  .btn-outline:hover{background:rgba(255,255,255,.12);transform:translateY(-3px);border-color:var(--white);}
+  .btn-navy{background:var(--navy);color:var(--white);}
+  .btn-navy:hover{background:var(--navy-dark);transform:translateY(-3px);box-shadow:0 10px 24px rgba(31,56,100,.35);}
+  .btn-sm{padding:10px 20px;font-size:13px;}
+
+  /* scroll-reveal */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);}
+  .reveal.in-view{opacity:1;transform:translateY(0);}
+  .reveal-stagger .in-view{transition-delay:calc(var(--i,0) * 80ms);}
+  .reveal-left{opacity:0;transform:translateX(-32px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);}
+  .reveal-left.in-view{opacity:1;transform:translateX(0);}
+  .reveal-right{opacity:0;transform:translateX(32px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);}
+  .reveal-right.in-view{opacity:1;transform:translateX(0);}
+
+  /* NAV */
+  .nav{position:sticky;top:0;z-index:200;background:rgba(18,35,63,.9);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08);transition:box-shadow .3s ease, background .3s ease, height .3s ease;}
+  .nav.scrolled{background:rgba(11,24,44,.97);box-shadow:0 8px 30px rgba(0,0,0,.25);}
+  .nav .container{display:flex;align-items:center;justify-content:space-between;height:76px;transition:height .3s ease;}
+  .nav.scrolled .container{height:64px;}
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand img{height:40px;width:auto;transition:height .3s ease;}
+  .nav.scrolled .brand img{height:32px;}
+  .brand-word{color:var(--white);font-size:19px;font-weight:800;letter-spacing:3px;}
+  .nav-links{display:flex;gap:28px;align-items:center;}
+  .nav-links a{color:var(--white);font-size:13.5px;font-weight:600;letter-spacing:.3px;opacity:.85;position:relative;}
+  .nav-links a:not(.btn):after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--gold);transition:width .25s ease;}
+  .nav-links a:not(.btn):hover:after,.nav-links a.active:after{width:100%;}
+  .nav-links a:hover,.nav-links a.active{opacity:1;color:var(--gold-light);}
+  .nav-links .btn{padding:10px 20px;font-size:12.5px;}
+
+  /* SECTION LABEL DIVIDER between major sections */
+  .seam{height:3px;background:linear-gradient(90deg,transparent,var(--gold) 20%,var(--gold-light) 50%,var(--gold) 80%,transparent);opacity:.7;}
+
+  /* HERO */
+  .hero{position:relative;background:linear-gradient(160deg,var(--navy-darker) 0%,var(--navy) 55%,var(--navy-dark) 100%);color:var(--white);padding:130px 0 116px;text-align:center;overflow:hidden;}
+  .hero-blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.35;z-index:1;animation:float 14s ease-in-out infinite;}
+  .hero-blob.b1{width:420px;height:420px;background:radial-gradient(circle,var(--gold) 0%,transparent 70%);top:-140px;left:-100px;animation-delay:0s;}
+  .hero-blob.b2{width:520px;height:520px;background:radial-gradient(circle,#3E5C93 0%,transparent 70%);bottom:-220px;right:-140px;animation-delay:3s;}
+  .hero-blob.b3{width:280px;height:280px;background:radial-gradient(circle,var(--gold-light) 0%,transparent 70%);top:40%;right:8%;opacity:.2;animation-delay:6s;}
+  .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:46px 46px;z-index:1;mask-image:radial-gradient(ellipse at center, black 40%, transparent 78%);}
+  .hero-sheen{position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(192,155,76,.10) 48%,transparent 66%);background-size:220% 220%;animation:sheen 9s ease-in-out infinite;z-index:1;}
+  .hero-spotlight{position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(192,155,76,.20) 0%,transparent 72%);pointer-events:none;z-index:1;transform:translate(-50%,-50%);opacity:0;transition:opacity .4s ease;}
+  .hero:hover .hero-spotlight{opacity:1;}
+  @keyframes sheen{0%{background-position:0% 0%;}50%{background-position:100% 100%;}100%{background-position:0% 0%;}}
+  @keyframes float{
+    0%,100%{transform:translate(0,0) scale(1);}
+    50%{transform:translate(30px,-24px) scale(1.06);}
+  }
+  .hero h1{font-size:49px;line-height:1.14;max-width:880px;margin:18px auto 22px;text-shadow:0 2px 30px rgba(0,0,0,.25);}
+  .hero h1 .accent{color:var(--gold-light);}
+  .hero p.sub{font-size:18px;color:#C9D2E0;max-width:660px;margin:0 auto 40px;}
+  .hero-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+  .hero .eyebrow{display:inline-block;padding:6px 16px;border:1px solid rgba(192,155,76,.5);border-radius:20px;background:rgba(192,155,76,.08);}
+
+  /* TRUST BADGES STRIP */
+  .trust-strip{background:var(--navy-dark);padding:18px 0;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);}
+  .trust-strip .container{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;}
+  .trust-item{display:flex;align-items:center;gap:9px;color:#C9D2E0;font-size:13px;font-weight:600;letter-spacing:.2px;}
+  .trust-item .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold);animation:pulse 2.4s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{opacity:.5;transform:scale(.85);}50%{opacity:1;transform:scale(1.15);}}
+
+  /* STATS / TRACK RECORD */
+  .stats{background:linear-gradient(100deg,var(--gold) 0%,#D4AF6A 100%);padding:44px 0;position:relative;overflow:hidden;}
+  .stats:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 40%,rgba(255,255,255,.25) 50%,transparent 60%);background-size:200% 200%;animation:sheen 6s ease-in-out infinite;}
+  .stats .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;text-align:center;}
+  .stat{flex:1;min-width:150px;}
+  .stat .num{font-size:38px;font-weight:800;color:var(--navy-dark);}
+  .stat .label{font-size:13px;font-weight:700;color:var(--navy-dark);text-transform:uppercase;letter-spacing:.6px;margin-top:4px;}
+
+  section{padding:96px 0;position:relative;}
+  .section-head{text-align:center;max-width:720px;margin:0 auto 50px;}
+  .section-head h2{font-size:33px;color:var(--navy);margin-top:10px;}
+  .section-head p{color:var(--muted);font-size:16px;margin-top:14px;}
+
+  /* WHO WE ARE / WHAT WE DO */
+  .about-copy{display:flex;gap:60px;align-items:flex-start;flex-wrap:wrap;}
+  .about-copy .col{flex:1;min-width:280px;}
+  .about-copy h3{color:var(--navy);font-size:20px;margin-bottom:12px;}
+  .about-copy p{color:var(--muted);font-size:15.5px;margin-bottom:14px;}
+  .network-list{list-style:none;margin-top:8px;}
+  .network-list li{padding:9px 0 9px 26px;position:relative;color:var(--muted);font-size:15px;border-bottom:1px solid var(--border);transition:padding-left .2s ease,color .2s ease;}
+  .network-list li:before{content:"—";position:absolute;left:0;color:var(--gold);font-weight:700;transition:left .2s ease;}
+  .network-list li:hover{padding-left:32px;color:var(--navy);}
+  .network-list li:hover:before{left:6px;}
+
+  /* PROCESS */
+  .process{background:var(--grey-bg);}
+  .steps{display:flex;gap:20px;flex-wrap:wrap;}
+  .step{flex:1;min-width:200px;background:var(--white);border:1px solid var(--border);border-top:3px solid var(--gold);padding:28px 22px;border-radius:6px;transition:transform .25s ease,box-shadow .25s ease;}
+  .step:hover{transform:translateY(-6px);box-shadow:0 16px 32px rgba(31,56,100,.12);}
+  .step .stepnum{font-size:13px;font-weight:800;color:var(--gold);letter-spacing:1px;margin-bottom:10px;}
+  .step h4{color:var(--navy);font-size:16.5px;margin-bottom:8px;}
+  .step p{color:var(--muted);font-size:14px;}
+
+  /* WHO WE WORK WITH mini cards */
+  .audiences{display:flex;gap:20px;flex-wrap:wrap;}
+  .aud-card{flex:1;min-width:220px;background:var(--white);border:1px solid var(--border);padding:26px 24px;border-radius:6px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;}
+  .aud-card:hover{transform:translateY(-6px);box-shadow:0 16px 32px rgba(31,56,100,.12);border-color:var(--gold);}
+  .aud-card h4{color:var(--navy);font-size:17px;margin-bottom:10px;}
+  .aud-card p{color:var(--muted);font-size:14.5px;}
+
+  /* VETTING PROCESS */
+  .vetting{background:var(--white);}
+  .vet-grid{display:flex;gap:20px;flex-wrap:wrap;}
+  .vet-card{flex:1;min-width:230px;background:var(--grey-bg);border:1px solid var(--border);border-radius:8px;padding:26px 22px;position:relative;transition:transform .25s ease,box-shadow .25s ease;}
+  .vet-card:hover{transform:translateY(-6px);box-shadow:0 16px 32px rgba(31,56,100,.1);}
+  .vet-num{position:absolute;top:-14px;left:20px;width:32px;height:32px;border-radius:50%;background:var(--navy);color:var(--gold-light);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(31,56,100,.3);}
+  .vet-card h4{color:var(--navy);font-size:15.5px;margin:14px 0 8px;}
+  .vet-card p{color:var(--muted);font-size:13.5px;}
+
+  /* ADVISOR / WHITE GLOVE SECTION */
+  .advisor{background:linear-gradient(165deg,var(--navy-darker) 0%,var(--navy) 100%);color:var(--white);position:relative;overflow:hidden;}
+  .advisor:before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(192,155,76,.16) 0%,transparent 70%);top:-260px;right:-160px;z-index:0;animation:float 16s ease-in-out infinite;}
+  .advisor .section-head p{color:#C9D2E0;}
+  .advisor .section-head h2{color:var(--white);}
+  .advisor-quote{text-align:center;max-width:780px;margin:0 auto 54px;font-size:23px;font-weight:700;color:var(--gold-light);line-height:1.5;position:relative;z-index:1;}
+  .advisor-grid{display:flex;gap:26px;flex-wrap:wrap;position:relative;z-index:1;}
+  .advisor-card{flex:1;min-width:230px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:30px 26px;text-align:center;transition:transform .25s ease,background .25s ease;}
+  .advisor-card:hover{transform:translateY(-6px);background:rgba(255,255,255,.09);}
+  .advisor-badge{width:54px;height:54px;border-radius:50%;background:var(--gold);color:var(--navy-dark);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:800;margin:0 auto 16px;transition:transform .3s ease;}
+  .advisor-card:hover .advisor-badge{transform:rotate(8deg) scale(1.08);}
+  .advisor-card h4{font-size:16.5px;margin-bottom:10px;color:var(--white);}
+  .advisor-card p{font-size:14px;color:#C9D2E0;}
+
+  /* CTA BANNER */
+  .cta-banner{background:linear-gradient(100deg,var(--navy) 0%,var(--navy-dark) 100%);color:var(--white);padding:52px 0;text-align:center;position:relative;overflow:hidden;}
+  .cta-banner:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 35%,rgba(192,155,76,.14) 50%,transparent 65%);background-size:220% 220%;animation:sheen 7s ease-in-out infinite;}
+  .cta-banner h3{font-size:25px;margin-bottom:8px;position:relative;z-index:1;}
+  .cta-banner p{color:#C9D2E0;font-size:15px;margin-bottom:22px;position:relative;z-index:1;}
+  .cta-banner .hero-ctas{position:relative;z-index:1;}
+
+  /* CALCULATOR */
+  .calc-section{background:var(--grey-bg);}
+  .calc-disclaimer{background:#FBF6EA;border:1px solid var(--gold-light);border-left:5px solid var(--gold);border-radius:4px;padding:18px 22px;font-size:13.5px;color:#6B5423;max-width:900px;margin:0 auto 44px;}
+  .calc-wrap{background:var(--white);border:1px solid var(--border);border-radius:10px;box-shadow:0 16px 48px rgba(31,56,100,.1);overflow:hidden;}
+  .calc-grid{display:flex;flex-wrap:wrap;}
+  .calc-inputs{flex:1.1;min-width:320px;padding:36px;border-right:1px solid var(--border);}
+  .calc-outputs{flex:1;min-width:300px;padding:36px;background:linear-gradient(165deg,var(--navy-darker),var(--navy));color:var(--white);}
+  .calc-inputs h4{color:var(--navy);font-size:16px;margin:22px 0 12px;}
+  .calc-inputs h4:first-child{margin-top:0;}
+  .calc-field{margin-bottom:14px;}
+  .calc-field label{display:block;font-size:12.5px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+  .calc-field input,.calc-field select{width:100%;padding:10px 11px;border:1px solid var(--border);border-radius:4px;font-size:14px;font-family:inherit;background:#FCFCFD;transition:border-color .2s ease,box-shadow .2s ease;}
+  .calc-field input:focus,.calc-field select:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(31,56,100,.1);}
+  .calc-row{display:flex;gap:12px;}
+  .calc-row .calc-field{flex:1;}
+  .out-group{margin-bottom:26px;}
+  .printout-cta{margin-top:8px;}
+  .printout-cta .btn-gold{position:relative;}
+  .out-group h4{color:var(--gold-light);font-size:13px;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:8px;}
+  .out-line{display:flex;justify-content:space-between;align-items:baseline;padding:7px 0;font-size:14px;color:#C9D2E0;}
+  .out-line .val{font-weight:800;font-size:17px;color:var(--white);transition:color .3s ease;}
+  .out-line .val.flash{color:var(--gold-light);}
+  .out-line.big .val{font-size:22px;color:var(--gold-light);}
+  .fee-note{font-size:13.5px;color:var(--gold-light);margin-top:8px;line-height:1.55;font-weight:600;background:rgba(192,155,76,.12);border:1px solid rgba(192,155,76,.35);border-radius:5px;padding:10px 12px;}
+  .fee-note strong{color:var(--gold-light);}
+
+  /* AUDIENCE SECTIONS (investors / wholesalers) */
+  .audience-block{display:flex;gap:60px;align-items:flex-start;flex-wrap:wrap;}
+  .audience-block.alt{background:var(--grey-bg);}
+  .audience-block .copy{flex:1;min-width:280px;}
+  .audience-block .panel{flex:1;min-width:320px;background:var(--white);border:1px solid var(--border);border-radius:8px;padding:32px;box-shadow:0 12px 40px rgba(31,56,100,.08);}
+  .audience-block h2{color:var(--navy);font-size:30px;margin-bottom:16px;}
+  .audience-block p{color:var(--muted);font-size:15.5px;margin-bottom:14px;}
+  .transparency{background:#FBF6EA;border:1px solid var(--gold-light);border-left:4px solid var(--gold);padding:16px 18px;border-radius:3px;font-size:14px;color:#6B5423;margin:18px 0;}
+
+  /* FORM */
+  form .field{margin-bottom:16px;}
+  form label{display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:6px;letter-spacing:.2px;}
+  form .req{color:#B3261E;}
+  form input[type=text],form input[type=email],form input[type=tel],form select,form textarea{
+    width:100%;padding:11px 12px;border:1px solid var(--border);border-radius:4px;font-size:14.5px;font-family:inherit;background:#FCFCFD;transition:border-color .2s ease,box-shadow .2s ease;
+  }
+  form select[multiple]{padding:6px;}
+  form select[multiple] option{padding:5px 8px;}
+  form input:focus,form select:focus,form textarea:focus{outline:none;border-color:var(--navy);background:var(--white);box-shadow:0 0 0 3px rgba(31,56,100,.1);}
+  form .row2{display:flex;gap:14px;}
+  form .row2 .field{flex:1;}
+  .checkbox-group{display:flex;flex-wrap:wrap;gap:10px;}
+  .checkbox-group label{display:flex;align-items:center;gap:7px;font-size:13.5px;font-weight:500;color:var(--text);background:var(--grey-bg);border:1px solid var(--border);padding:8px 12px;border-radius:20px;cursor:pointer;transition:background .2s ease,border-color .2s ease;}
+  .checkbox-group label:hover{border-color:var(--gold);}
+  .checkbox-group input{width:auto;margin:0;}
+  .field-hint{font-size:12px;color:var(--muted);margin-top:5px;}
+  form .submit-row{margin-top:22px;}
+  .form-note{font-size:12.5px;color:var(--muted);margin-top:14px;}
+  .doc-links{margin-top:22px;padding-top:18px;border-top:1px solid var(--border);}
+  .doc-links a{display:inline-block;font-size:13.5px;color:var(--navy);font-weight:700;margin-right:18px;}
+  .doc-links a:hover{color:var(--gold);}
+  .required-note{font-size:11.5px;color:var(--muted);margin-bottom:18px;}
+
+  /* CORE VALUES */
+  .values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;}
+  .value-chip{position:relative;border-radius:10px;padding:26px 22px;overflow:hidden;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease;cursor:default;}
+  .value-chip:hover{transform:translateY(-8px) scale(1.03);box-shadow:0 20px 40px rgba(31,56,100,.22);}
+  .value-chip .v-icon{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:800;margin-bottom:14px;transition:transform .35s ease;}
+  .value-chip:hover .v-icon{transform:rotate(-10deg) scale(1.12);}
+  .value-chip h4{font-size:15.5px;margin-bottom:7px;font-weight:800;}
+  .value-chip p{font-size:13.5px;}
+  .value-chip:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 40%,rgba(255,255,255,.12) 50%,transparent 60%);background-size:220% 220%;background-position:0% 0%;transition:background-position .6s ease;pointer-events:none;}
+  .value-chip:hover:before{background-position:100% 100%;}
+  .value-chip.navy-card{background:linear-gradient(155deg,var(--navy-dark),var(--navy));}
+  .value-chip.navy-card h4{color:var(--white);}
+  .value-chip.navy-card p{color:#C9D2E0;}
+  .value-chip.navy-card .v-icon{background:var(--gold);color:var(--navy-dark);}
+  .value-chip.gold-card{background:linear-gradient(155deg,var(--gold-soft),var(--gold-light));border:1px solid var(--gold-light);}
+  .value-chip.gold-card h4{color:var(--navy-dark);}
+  .value-chip.gold-card p{color:var(--gold-deep);}
+  .value-chip.gold-card .v-icon{background:var(--navy);color:var(--gold-light);}
+
+  /* SERVICE AREA */
+  .area-wrap{display:flex;gap:50px;flex-wrap:wrap;align-items:flex-start;}
+  .area-copy{flex:1;min-width:280px;}
+  .area-copy p{color:var(--muted);font-size:15.5px;margin-bottom:14px;}
+  .county-cloud{flex:1;min-width:300px;display:flex;flex-wrap:wrap;gap:9px;align-content:flex-start;}
+  .county-chip{background:var(--white);border:1px solid var(--border);color:var(--navy);font-size:13px;font-weight:600;padding:8px 14px;border-radius:20px;transition:transform .2s ease,background .2s ease,color .2s ease;}
+  .county-chip:hover{background:var(--navy);color:var(--white);transform:translateY(-3px);}
+  .county-chip.core{background:var(--gold-soft);border-color:var(--gold-light);}
+
+  /* FAQ */
+  .faq-list{max-width:820px;margin:0 auto;}
+  .faq-item{border:1px solid var(--border);border-radius:6px;margin-bottom:12px;overflow:hidden;background:var(--white);}
+  .faq-q{padding:18px 22px;font-weight:700;color:var(--navy);font-size:15.5px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;}
+  .faq-q .plus{font-size:20px;color:var(--gold);transition:transform .3s ease;}
+  .faq-item.open .faq-q .plus{transform:rotate(135deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease;padding:0 22px;color:var(--muted);font-size:14.5px;}
+  .faq-item.open .faq-a{max-height:300px;padding:0 22px 20px;}
+
+  /* ABOUT US TEAM */
+  .team{display:flex;gap:28px;flex-wrap:wrap;justify-content:center;}
+  .team-card{flex:1;min-width:270px;max-width:340px;background:var(--white);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;}
+  .team-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(31,56,100,.14);}
+  .team-card .photo{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--grey-bg);transition:transform .4s ease;}
+  .team-card:hover .photo{transform:scale(1.04);}
+  .team-card .photo-wrap{overflow:hidden;}
+  .team-card .photo.placeholder{display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;text-align:center;padding:20px;}
+  .team-card .info{padding:20px 22px 26px;}
+  .team-card h4{color:var(--navy);font-size:18px;}
+  .team-card .role{color:var(--gold);font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;margin:4px 0 12px;}
+  .team-card p{color:var(--muted);font-size:13.5px;}
+  .bio-full{font-size:13.5px;color:var(--muted);max-height:220px;overflow-y:auto;padding-right:4px;}
+
+  /* TESTIMONIALS */
+  .testimonials{background:var(--grey-bg);}
+  .testi-grid{display:flex;gap:22px;flex-wrap:wrap;}
+  .testi-card{flex:1;min-width:260px;background:var(--white);border:1px solid var(--border);border-radius:8px;padding:28px 24px;position:relative;transition:transform .25s ease,box-shadow .25s ease;}
+  .testi-card:hover{transform:translateY(-6px);box-shadow:0 16px 32px rgba(31,56,100,.12);}
+  .testi-card .quote-mark{font-size:40px;color:var(--gold-light);line-height:1;font-family:Georgia,serif;margin-bottom:6px;}
+  .testi-card p.placeholder-text{color:var(--muted);font-size:14px;font-style:italic;}
+  .testi-card .stars{color:var(--gold);font-size:15px;letter-spacing:2px;margin-bottom:10px;}
+  .testi-card p.quote-text{color:var(--text);font-size:14.5px;font-style:italic;margin-bottom:14px;}
+  .testi-card .author{font-weight:800;color:var(--navy);font-size:14px;}
+  .testi-note{text-align:center;max-width:640px;margin:36px auto 0;font-size:13.5px;color:var(--muted);background:var(--white);border:1px solid var(--border);border-radius:6px;padding:16px 20px;}
+
+  /* CONTACT BAND */
+  .contact-band{background:var(--navy-darker);color:var(--white);padding:60px 0;text-align:center;position:relative;overflow:hidden;}
+  .contact-band h2{font-size:26px;margin-bottom:10px;}
+  .contact-band p{color:#C9D2E0;font-size:15px;margin-bottom:22px;}
+  .contact-links{display:flex;gap:34px;justify-content:center;flex-wrap:wrap;font-size:15px;font-weight:600;}
+  .contact-links a{color:var(--white);transition:color .2s ease;}
+  .contact-links a:hover{color:var(--gold-light);}
+
+  footer{background:var(--navy-darker);color:#8C99B0;padding:34px 0;text-align:center;font-size:12.5px;border-top:1px solid rgba(255,255,255,.08);}
+  footer .disclaimer{max-width:760px;margin:0 auto 10px;color:#A7B2C4;}
+  footer .tagline{color:var(--gold-light);font-weight:700;letter-spacing:.5px;margin-bottom:14px;font-size:13px;}
+
+  #confirm-banner{display:none;background:#1F7A3D;color:#fff;padding:16px;text-align:center;font-weight:700;font-size:14.5px;border-radius:4px;margin-bottom:18px;animation:popIn .45s cubic-bezier(.34,1.56,.64,1);}
+  #package-confirm{animation:popIn .45s cubic-bezier(.34,1.56,.64,1);}
+  @keyframes popIn{0%{opacity:0;transform:scale(.85);}100%{opacity:1;transform:scale(1);}}
+  #floatToTop{position:fixed;bottom:96px;right:26px;z-index:300;width:46px;height:46px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:800;box-shadow:0 8px 24px rgba(0,0,0,.25);opacity:0;transform:translateY(16px);transition:opacity .4s ease,transform .4s ease,background .2s ease;cursor:pointer;}
+  #floatToTop.show{opacity:1;transform:translateY(0);}
+  #floatToTop:hover{background:var(--gold);color:var(--navy-dark);}
+
+  /* FLOATING CTA */
+  .float-cta{position:fixed;bottom:26px;right:26px;z-index:300;background:linear-gradient(100deg,var(--gold),#D6B26C);color:var(--navy-dark);padding:15px 22px;border-radius:50px;font-weight:800;font-size:14px;box-shadow:0 10px 30px rgba(0,0,0,.3);display:flex;align-items:center;gap:8px;animation:bob 2.6s ease-in-out infinite;opacity:0;transform:translateY(20px);transition:opacity .4s ease,transform .4s ease;}
+  .float-cta.show{opacity:1;transform:translateY(0);}
+  .float-cta:hover{transform:translateY(-4px) scale(1.04);}
+  @keyframes bob{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
+  .float-cta.show:hover{animation-play-state:paused;}
+
+  /* BUYER PRINTOUT — screen-hidden, print-only */
+  #printout{display:none;}
+  @media print{
+    body *{visibility:hidden;}
+    #printout, #printout *{visibility:visible;}
+    #printout{display:block;position:absolute;top:0;left:0;width:100%;padding:36px;}
+    .p-header{display:flex;align-items:center;gap:14px;margin-bottom:16px;border-bottom:3px solid #C09B4C;padding-bottom:14px;}
+    .p-header img{height:44px;width:auto;}
+    .p-brand{font-size:20px;font-weight:800;color:#1F3864;letter-spacing:2px;}
+    .p-tagline{font-size:11px;color:#5B6472;}
+    #printout h1{color:#1F3864;font-size:22px;margin-bottom:2px;}
+    #printout .p-subtitle{color:#8A6C2F;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;margin-bottom:18px;}
+    #printout h2{color:#1F3864;font-size:14px;border-bottom:1px solid #C09B4C;padding-bottom:5px;margin:18px 0 8px;}
+    #printout table{width:100%;border-collapse:collapse;margin-bottom:4px;font-size:12px;}
+    #printout table td{padding:6px 10px;border:1px solid #E3E6EA;}
+    #printout table tr td:first-child{background:#F5F6F8;font-weight:700;color:#1F3864;width:42%;}
+    #printout ul{padding-left:20px;font-size:12px;color:#23282F;}
+    #printout li{margin-bottom:4px;}
+    #printout p{font-size:12px;color:#5B6472;}
+    #printout .p-small{font-size:10.5px;font-style:italic;color:#8C99B0;}
+    #printout .p-footer{margin-top:20px;border-top:1px solid #E3E6EA;padding-top:10px;font-size:10px;color:#8C99B0;}
+    .float-cta,#floatToTop{display:none !important;}
+  }
+
+  @media(max-width:720px){
+    .hero h1{font-size:32px;}
+    .nav-links{display:none;}
+    .stats .container{text-align:left;}
+    section{padding:64px 0;}
+    .calc-inputs{border-right:none;border-bottom:1px solid var(--border);}
+    .float-cta{right:16px;bottom:16px;padding:12px 18px;font-size:13px;}
+    #floatToTop{right:16px;bottom:80px;width:40px;height:40px;font-size:16px;}
+  }
+</style>
+</head>
+<body>
+
+<div id="scrollProgress"></div>
+
+<!-- NAV -->
+<div class="nav" id="siteNav">
+  <div class="container">
+    <div class="brand">
+      <img src="assets/deal-vault-icon.png" alt="Deal Vault">
+      <span class="brand-word">DEAL VAULT</span>
+    </div>
+    <div class="nav-links">
+      <a href="#process">How It Works</a>
+      <a href="#calculator">Estimator</a>
+      <a href="#about">About Us</a>
+      <a href="#wholesalers">Wholesalers/Agents</a>
+      <a href="#investors" class="btn btn-gold">Submit Your Buy Box</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-sheen"></div>
+  <div class="hero-blob b1"></div>
+  <div class="hero-blob b2"></div>
+  <div class="hero-blob b3"></div>
+  <div class="hero-spotlight" id="heroSpotlight"></div>
+  <div class="container">
+    <div class="eyebrow">Where Investors Find Their Next Deal</div>
+    <h1>Off-Market Real Estate Opportunities, <span class="accent">Delivered to the Right Buyers First</span></h1>
+    <p class="sub">Deal Vault connects qualified cash investors, wholesalers, and off-market real estate professionals across Florida — matching real capital with meticulously vetted opportunity, before it ever reaches the open market.</p>
+    <div class="hero-ctas">
+      <a href="#investors" class="btn btn-gold">I'm an Investor — Submit My Buy Box</a>
+      <a href="#wholesalers" class="btn btn-outline">I Have a Deal to Submit</a>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-item"><span class="dot"></span>Every Contact Independently Vetted</div>
+    <div class="trust-item"><span class="dot"></span>Zero Cost to Wholesalers &amp; Agents</div>
+    <div class="trust-item"><span class="dot"></span>One Dedicated Advisor, Start to Close</div>
+    <div class="trust-item"><span class="dot"></span>Fully Transparent Fee Structure</div>
+  </div>
+</div>
+
+<!-- TRACK RECORD STATS -->
+<div class="stats" id="track-record">
+  <div class="container">
+    <div class="stat"><div class="num" data-count="25" data-prefix="$" data-suffix="M+">0</div><div class="label">Investor Distributions</div></div>
+    <div class="stat"><div class="num" data-count="450" data-suffix="+">0</div><div class="label">Investors in Network</div></div>
+    <div class="stat"><div class="num" data-count="250" data-suffix="+">0</div><div class="label">Wholesalers</div></div>
+    <div class="stat"><div class="num" data-count="100" data-suffix="+">0</div><div class="label">Off-Market Agents</div></div>
+    <div class="stat"><div class="num">&amp; Growing</div><div class="label">Every Single Day</div></div>
+  </div>
+</div>
+
+<!-- WHO WE ARE / WHAT WE DO -->
+<section id="who-we-are">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Who We Are</div>
+      <h2>Connecting Opportunity with Capital</h2>
+      <div class="divider"></div>
+      <p>Deal Vault is a real estate deal-flow and investor-relations network built on a simple, uncompromising premise: the right property should always find the right buyer — <strong>efficiently</strong>, and without the noise.</p>
+      <div style="display:inline-block;margin-top:18px;padding:10px 24px;background:var(--gold-soft);border:1px solid var(--gold-light);border-radius:30px;">
+        <span style="color:var(--navy);font-weight:800;font-size:15px;">Deals Sourced from <span class="gold-text">$20,000</span> to <span class="gold-text">$50 Million+</span></span>
+      </div>
+    </div>
+    <div class="about-copy">
+      <div class="col reveal-left">
+        <h3>What We Do</h3>
+        <p>We've built a <strong>curated, private network</strong> that brings together the people who move real estate off-market: qualified cash investors sourcing their next acquisition, wholesalers and acquisition companies surfacing opportunity, and real estate professionals who need a fast, trusted channel to move inventory. Our network includes:</p>
+        <ul class="network-list">
+          <li>Qualified Cash Investors</li>
+          <li>Wholesalers</li>
+          <li>Real Estate Professionals</li>
+          <li>Builders &amp; Developers</li>
+          <li>Acquisition Companies</li>
+          <li>Private Property Owners</li>
+          <li>Lenders &amp; Industry Professionals</li>
+        </ul>
+      </div>
+      <div class="col reveal-right">
+        <h3>Why Deal Vault</h3>
+        <p><strong>Relationship First.</strong> We take the time to understand exactly what you're looking for before we ever send you a deal.</p>
+        <p><strong>Qualified Network.</strong> Every investor and source in our system is meticulously vetted — so what reaches you is genuinely worth your time.</p>
+        <p><strong>Market Intelligence.</strong> We track real numbers, real comps, and real trends across the markets we operate in.</p>
+        <p><strong>Professional Communication.</strong> Clear, timely, and forthright — at every stage of the transaction.</p>
+        <p><strong>Long-Term Partnerships.</strong> We're not chasing a single transaction. We're building a network people return to, deal after deal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="seam"></div>
+
+<!-- WHO WE WORK WITH -->
+<section class="process" id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Who We Work With</div>
+      <h2>Built for Every Side of the Deal</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="audiences reveal-stagger">
+      <div class="aud-card reveal" style="--i:0">
+        <h4>Investors</h4>
+        <p>Tell us your buy box once. We handle the filtering, so every property that reaches you is one genuinely worth your time — no cold spam, no mismatched deals.</p>
+      </div>
+      <div class="aud-card reveal" style="--i:1">
+        <h4>Wholesalers</h4>
+        <p>Submit your deal and we'll present it to a private network of qualified, ready buyers matched to your exact numbers — at <strong>no cost to you</strong>.</p>
+      </div>
+      <div class="aud-card reveal" style="--i:2">
+        <h4>Real Estate Professionals</h4>
+        <p>A fast, trusted channel to move off-market inventory to serious capital, without diluting your relationships or your commission.</p>
+      </div>
+      <div class="aud-card reveal" style="--i:3">
+        <h4>Builders &amp; Acquisition Companies</h4>
+        <p>Consistent, predictable deal flow — and a network built on long-term partnerships rather than one-off transactions.</p>
+      </div>
+    </div>
+
+    <div class="section-head reveal" style="margin-top:70px;">
+      <div class="eyebrow">Our Process</div>
+      <h2>How a Deal Moves Through Deal Vault</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="steps reveal-stagger">
+      <div class="step reveal" style="--i:0"><div class="stepnum">STEP 1</div><h4>Build Relationships</h4><p>We start by getting to know you — your goals, your criteria, and how you prefer to work.</p></div>
+      <div class="step reveal" style="--i:1"><div class="stepnum">STEP 2</div><h4>Understand Investment Criteria</h4><p>We document your exact buy box so we only ever bring you deals that genuinely fit.</p></div>
+      <div class="step reveal" style="--i:2"><div class="stepnum">STEP 3</div><h4>Source Opportunities</h4><p>We work our network of wholesalers, agents, and direct sources to surface real off-market inventory.</p></div>
+      <div class="step reveal" style="--i:3"><div class="stepnum">STEP 4</div><h4>Match Opportunity with Capital</h4><p>We connect the right deal with the right buyer — based on real numbers, not guesswork.</p></div>
+      <div class="step reveal" style="--i:4"><div class="stepnum">STEP 5</div><h4>Support the Transaction</h4><p>We stay engaged through closing, so every deal moves smoothly from match to close.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE VET -->
+<section class="vetting">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Diligence &amp; Trust</div>
+      <h2>How We Vet Every Deal — and Every Buyer</h2>
+      <div class="divider"></div>
+      <p>Every submission that enters Deal Vault, whether it's a buy box or a property, moves through a documented review process before it's ever matched or presented.</p>
+    </div>
+    <div class="vet-grid reveal-stagger">
+      <div class="vet-card reveal" style="--i:0">
+        <div class="vet-num">1</div>
+        <h4>Identity &amp; Contact Verification</h4>
+        <p>We confirm who we're working with — name, company, and contact details are cross-checked before anything moves forward.</p>
+      </div>
+      <div class="vet-card reveal" style="--i:1">
+        <div class="vet-num">2</div>
+        <h4>Criteria &amp; Completeness Review</h4>
+        <p>Buy boxes and property submissions are checked for the details that matter — price, geography, structure, and documentation.</p>
+      </div>
+      <div class="vet-card reveal" style="--i:2">
+        <div class="vet-num">3</div>
+        <h4>Underwriting &amp; Cross-Checks</h4>
+        <p>Property submissions are reviewed against public record and market data, with any inconsistency flagged before it's presented.</p>
+      </div>
+      <div class="vet-card reveal" style="--i:3">
+        <div class="vet-num">4</div>
+        <h4>Ongoing Monitoring</h4>
+        <p>Our system continuously re-reviews open records, so status and criteria stay current — not just accurate on day one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEDICATED ADVISOR / WHITE GLOVE -->
+<section class="advisor">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Your Point of Contact</div>
+      <h2>One Dedicated Advisor. Full Transparency. No More Guesswork.</h2>
+      <div class="divider"></div>
+      <p>Every investor and wholesaler in the Deal Vault network is paired with a dedicated advisor — your go-to representative for every deal that comes across your desk.</p>
+    </div>
+    <div class="advisor-quote reveal">"No more realtors. No more lies. Just one trusted advisor — and full transparency, every step of the way."</div>
+    <div class="advisor-grid reveal-stagger">
+      <div class="advisor-card reveal" style="--i:0">
+        <div class="advisor-badge">✓</div>
+        <h4>Every Property Vetted</h4>
+        <p>Comps checked, numbers verified, ownership confirmed — before a deal ever reaches you.</p>
+      </div>
+      <div class="advisor-card reveal" style="--i:1">
+        <div class="advisor-badge">✓</div>
+        <h4>Every Investor Vetted</h4>
+        <p>So wholesalers and agents know they're sending deals to real, qualified buyers — not tire kickers.</p>
+      </div>
+      <div class="advisor-card reveal" style="--i:2">
+        <div class="advisor-badge">1:1</div>
+        <h4>One Point of Contact</h4>
+        <p>Your dedicated advisor personally manages the relationship — from first conversation through closing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MID-PAGE CTA -->
+<div class="cta-banner">
+  <div class="container">
+    <h3>Ready to Get Matched with the Right Deal?</h3>
+    <p>It takes two minutes to submit your buy box — your dedicated advisor takes it from there.</p>
+    <div class="hero-ctas">
+      <a href="#investors" class="btn btn-gold">Submit Your Buy Box</a>
+    </div>
+  </div>
+</div>
+
+<!-- INVESTMENT ESTIMATOR -->
+<section class="calc-section" id="calculator">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Investment Estimator</div>
+      <h2>Run the Numbers Before You Commit</h2>
+      <div class="divider"></div>
+      <p>A quick-reference tool for estimated closing costs, property taxes, cap rate, NOI, and flip spread — built to help you get oriented, not to replace real underwriting.</p>
+    </div>
+
+    <div class="calc-disclaimer reveal">
+      <strong>Please read before using this tool:</strong> All figures produced below are <strong>estimates for illustrative purposes only</strong>. They rely on approximate average Florida county tax rates and assumptions you can adjust, not the actual assessed value, exemptions, or negotiated terms of any specific transaction. Nothing here is guaranteed, and nothing here constitutes financial, tax, legal, or investment advice. Deal Vault is not a licensed financial or tax advisor — always confirm real numbers with your advisor, a licensed CPA, and the county property appraiser before making a decision.
+    </div>
+
+    <div class="calc-wrap reveal">
+      <div class="calc-grid">
+        <div class="calc-inputs">
+          <h4>Property &amp; Purchase</h4>
+          <div class="calc-row">
+            <div class="calc-field"><label>Purchase Price ($)</label><input type="number" id="c-price" placeholder="e.g. 250000"></div>
+            <div class="calc-field"><label>Est. Rehab Cost ($)</label><input type="number" id="c-rehab" placeholder="e.g. 30000"></div>
+          </div>
+          <div class="calc-row">
+            <div class="calc-field"><label>ARV — After Repair Value ($)</label><input type="number" id="c-arv" placeholder="e.g. 340000"></div>
+            <div class="calc-field"><label>County</label>
+              <select id="c-county">
+                <option value="">Select county…</option>
+                <option value="0.86">Brevard</option>
+                <option value="0.93">Orange</option>
+                <option value="0.92">Seminole</option>
+                <option value="0.95">Osceola</option>
+                <option value="0.84">Polk</option>
+                <option value="0.90">Volusia</option>
+                <option value="0.83">Indian River</option>
+                <option value="1.00">St. Lucie</option>
+                <option value="0.87">Flagler</option>
+                <option value="0.80">Charlotte</option>
+                <option value="0.78">Highlands</option>
+                <option value="0.97">Miami-Dade</option>
+                <option value="1.02">Broward</option>
+                <option value="1.06">Palm Beach</option>
+                <option value="0.96">Hillsborough</option>
+                <option value="0.89">Pinellas</option>
+                <option value="0.80">Lee</option>
+                <option value="0.68">Collier</option>
+                <option value="0.86">Other / Statewide Avg.</option>
+              </select>
+            </div>
+          </div>
+          <div class="calc-row">
+            <div class="calc-field"><label>Property Tax Rate (%)</label><input type="number" step="0.01" id="c-taxrate" placeholder="Auto-fills from county"></div>
+            <div class="calc-field"><label>Est. Closing Cost (%, excl. doc stamps)</label><input type="number" step="0.1" id="c-closingpct" value="2.5"></div>
+          </div>
+
+          <h4>Rental Income (optional — for NOI &amp; Cap Rate)</h4>
+          <div class="calc-row">
+            <div class="calc-field"><label>Monthly Rental Income ($)</label><input type="number" id="c-rent" placeholder="e.g. 2200"></div>
+            <div class="calc-field"><label>Monthly Operating Expenses ($)</label><input type="number" id="c-expenses" placeholder="Insurance, HOA, maintenance, vacancy reserve"></div>
+          </div>
+          <div class="calc-field"><label>Cash Invested ($ — for Cash-on-Cash ROI)</label><input type="number" id="c-cash" placeholder="Down payment + closing + rehab, if applicable"></div>
+
+          <p class="field-hint">Tip: leave rental fields blank for a flip/wholesale-only estimate. Every field is editable — adjust any assumption to match your deal.</p>
+
+          <h4>Printout Details <span style="color:var(--muted);font-weight:400;text-transform:none;letter-spacing:0;">(optional — powers your Buyer Printout below)</span></h4>
+          <div class="calc-row">
+            <div class="calc-field"><label>Property Address</label><input type="text" id="p-address" placeholder="123 Main St, City, FL"></div>
+            <div class="calc-field"><label>Property Type</label>
+              <select id="p-type">
+                <option value="">—</option>
+                <option value="Single Family Residence (SFR)">Single Family Residence (SFR)</option>
+                <option value="Multifamily">Multifamily</option>
+                <option value="Land">Land</option>
+                <option value="Mobile Home">Mobile Home</option>
+                <option value="Commercial">Commercial</option>
+              </select>
+            </div>
+          </div>
+          <div class="calc-row">
+            <div class="calc-field"><label>Construction</label><input type="text" id="p-construction" placeholder="e.g. Block, Frame"></div>
+            <div class="calc-field"><label>Year Built</label><input type="text" id="p-yearbuilt" placeholder="e.g. 1998"></div>
+          </div>
+          <div class="calc-row">
+            <div class="calc-field"><label>Beds / Baths</label><input type="text" id="p-bedsbaths" placeholder="e.g. 3 Beds / 2 Baths"></div>
+            <div class="calc-field"><label>Living Area (sqft)</label><input type="text" id="p-sqft" placeholder="e.g. 1,450"></div>
+          </div>
+          <div class="calc-row">
+            <div class="calc-field"><label>Lot Size (sqft)</label><input type="text" id="p-lotsize" placeholder="e.g. 8,000"></div>
+            <div class="calc-field"><label>Earnest Money Deposit ($)</label><input type="number" id="c-emd" placeholder="e.g. 5000"></div>
+          </div>
+          <div class="calc-row">
+            <div class="calc-field"><label>Title Company</label><input type="text" id="p-title" placeholder="e.g. Old Tampa Bay Title"></div>
+            <div class="calc-field"><label>Prepared For (your name)</label><input type="text" id="p-preparedfor" placeholder="Investor name"></div>
+          </div>
+          <div class="calc-field"><label>Condition Disclosure / Notes</label><textarea id="p-notes" rows="2" placeholder="Any known issues, flood history, remediation, etc."></textarea></div>
+        </div>
+
+        <div class="calc-outputs">
+          <div class="out-group">
+            <h4>Acquisition Costs</h4>
+            <div class="out-line"><span>Est. Annual Property Tax</span><span class="val" id="o-tax">$0</span></div>
+            <div class="out-line"><span>Est. Doc Stamps (deed)</span><span class="val" id="o-docstamps">$0</span></div>
+            <div class="out-line"><span>Est. Closing Costs (total)</span><span class="val" id="o-closing">$0</span></div>
+          </div>
+          <div class="out-group">
+            <h4>Deal Vault Finder's Fee</h4>
+            <div class="out-line big"><span>Estimated Range</span><span class="val" id="o-fee">$0 – $0</span></div>
+            <p class="fee-note">Shown at <strong>1%–1.5%</strong> of purchase price. The exact fee <strong>varies by deal, city, and relationship</strong> and is confirmed by your dedicated advisor — it is never charged unless a deal closes.</p>
+          </div>
+          <div class="out-group">
+            <h4>Rental Performance</h4>
+            <div class="out-line"><span>Est. Annual NOI</span><span class="val" id="o-noi">$0</span></div>
+            <div class="out-line"><span>Est. Cap Rate</span><span class="val" id="o-cap">0%</span></div>
+            <div class="out-line"><span>Est. Cash-on-Cash ROI</span><span class="val" id="o-coc">0%</span></div>
+          </div>
+          <div class="out-group">
+            <h4>Flip / Spread Analysis</h4>
+            <div class="out-line"><span>Est. All-In Cost</span><span class="val" id="o-allin">$0</span></div>
+            <div class="out-line big"><span>Est. Potential Profit (ARV basis)</span><span class="val" id="o-profit">$0</span></div>
+          </div>
+
+          <div class="printout-cta">
+            <button type="button" class="btn btn-gold" id="printout-btn" style="width:100%;">🖨 Generate Buyer Printout</button>
+            <p class="fee-note" style="margin-top:10px;">Creates a clean, branded one-page summary — using the Deal Vault property package format — that you can save as a PDF or print for your records.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUYER PRINTOUT (print-only, populated by JS, matches the Deal Vault property package format) -->
+<div id="printout">
+  <div class="p-header">
+    <img src="assets/deal-vault-icon.png" alt="Deal Vault">
+    <div>
+      <div class="p-brand">DEAL VAULT</div>
+      <div class="p-tagline">Connecting Opportunity with Capital.</div>
+    </div>
+  </div>
+  <h1 id="p-out-address">Property Address</h1>
+  <div class="p-subtitle" id="p-out-type">Investment Opportunity</div>
+
+  <h2>Property Snapshot</h2>
+  <table id="p-out-snapshot"><tbody></tbody></table>
+
+  <h2>Pricing</h2>
+  <table id="p-out-pricing"><tbody></tbody></table>
+
+  <div id="p-out-condition-wrap" style="display:none;">
+    <h2>Condition Disclosure — Please Read</h2>
+    <p id="p-out-condition"></p>
+    <p class="p-small">This is a seller/submitter disclosure, not a guarantee of insurability or completed remediation. Independent verification is strongly recommended.</p>
+  </div>
+
+  <h2>Terms</h2>
+  <ul id="p-out-terms"></ul>
+
+  <h2>Comparable Sales</h2>
+  <p>Comparable sales are available upon request — ask your dedicated advisor for a full comp package specific to this property.</p>
+
+  <div class="p-footer">
+    <p><strong>PLEASE NOTE:</strong> All figures on this summary are estimates for illustrative purposes only, generated from assumptions you entered and approximate average county data. Nothing here is guaranteed and none of it constitutes financial, tax, or legal advice. Deal Vault's finder's fee (shown above) varies by deal, city, and relationship. Information is deemed to be reliable, but is not guaranteed.</p>
+    <p id="p-out-preparedfor"></p>
+    <p>Prepared via yourdealvault.com &bull; <span id="p-out-date"></span> &bull; casey@yourdealvault.com &bull; 321-345-1309</p>
+  </div>
+</div>
+
+<!-- PROPERTY PACKAGE REQUEST -->
+<section class="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Interested in a Specific Property?</div>
+      <h2>Request a Full Property Package</h2>
+      <div class="divider"></div>
+      <p>Ask your dedicated advisor for a complete property package — pricing breakdown, terms, and details — prepared and sent directly to your inbox. We don't auto-generate these; a real person on our team puts every package together.</p>
+    </div>
+    <div class="audience-block" style="max-width:720px;margin:0 auto;">
+      <div class="panel reveal" style="width:100%;">
+        <div id="package-confirm" style="display:none;background:#E9F7EE;border:1px solid #2E9E52;color:#1F7A3D;padding:14px 16px;border-radius:4px;font-weight:700;font-size:14px;margin-bottom:18px;">✓ Request received — your dedicated advisor will send your property package shortly.</div>
+        <form action="https://formsubmit.co/casey@yourdealvault.com" method="POST" id="package-form">
+          <input type="hidden" name="_subject" value="Property Package Request — Deal Vault Website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey4" style="display:none">
+          <input type="hidden" name="_next" value="https://yourdealvault.com/?submitted=1&form=package#calculator">
+          <input type="hidden" name="Form Type" value="Property Package Request">
+          <div class="row2">
+            <div class="field">
+              <label>Your Name <span class="req">*</span></label>
+              <input type="text" name="firstname" required>
+            </div>
+            <div class="field">
+              <label>Your Email <span class="req">*</span></label>
+              <input type="email" name="email" required>
+            </div>
+          </div>
+          <div class="field">
+            <label>Property Address or Listing You're Interested In <span class="req">*</span></label>
+            <input type="text" name="Property of Interest" required placeholder="Full address, or reference the property/deal you're asking about">
+          </div>
+          <div class="field">
+            <label>Anything specific you'd like included?</label>
+            <textarea name="Package Notes" rows="3" placeholder="e.g. rehab budget, financing terms, comps, timeline"></textarea>
+          </div>
+          <div class="submit-row">
+            <button type="submit" class="btn btn-navy" style="width:100%;">Request Property Package</button>
+          </div>
+          <p class="form-note">By submitting, a copy of this form is sent directly to the Deal Vault team and logged in our system. We never sell or share your information.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTORS: NATIVE FILLABLE FORM -->
+<section id="investors">
+  <div class="container">
+    <div class="audience-block">
+      <div class="copy reveal-left">
+        <div class="eyebrow">For Investors</div>
+        <h2>Submit Your Buy Box</h2>
+        <p>Tell us exactly what you're looking for — property type, markets, price range, and how you fund deals — and your dedicated advisor will only reach out when something genuinely fits.</p>
+        <p>This form goes straight to our team and into our system. No account required, no spam — just a direct line to a network of off-market deals matched to your criteria.</p>
+        <div class="transparency">
+          <strong>Full transparency:</strong> Deal Vault charges a finder's fee of approximately <strong>1%–1.5%</strong> of the closing price, paid after closing and only if a deal closes. The exact fee varies by deal, city, and relationship, and is always confirmed upfront.
+        </div>
+      </div>
+      <div class="panel reveal-right">
+        <div id="confirm-banner">✓ Thank you — your buy box has been submitted. Your dedicated advisor will be in touch.</div>
+        <form action="https://formsubmit.co/casey@yourdealvault.com" method="POST" id="buybox-form">
+          <input type="hidden" name="_subject" value="New Buy Box Submission — Deal Vault Website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_next" value="https://yourdealvault.com/?submitted=1#investors">
+          <input type="hidden" name="network_role" value="investor">
+          <input type="hidden" name="verification_status" value="unverified">
+          <input type="hidden" name="Form Type" value="Investor Buy Box">
+
+          <div class="row2">
+            <div class="field">
+              <label>First Name <span class="req">*</span></label>
+              <input type="text" name="firstname" required>
+            </div>
+            <div class="field">
+              <label>Last Name <span class="req">*</span></label>
+              <input type="text" name="lastname" required>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label>Company (if any)</label>
+              <input type="text" name="company">
+            </div>
+            <div class="field">
+              <label>Preferred Contact Method</label>
+              <select name="preferred_contact_method">
+                <option value="text">Text</option>
+                <option value="email">Email</option>
+                <option value="call">Call</option>
+              </select>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label>Email <span class="req">*</span></label>
+              <input type="email" name="email" required>
+            </div>
+            <div class="field">
+              <label>Phone</label>
+              <input type="tel" name="phone">
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Property Types You're Targeting</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="property_types" value="sfr"> SFR</label>
+              <label><input type="checkbox" name="property_types" value="multifamily"> Multifamily</label>
+              <label><input type="checkbox" name="property_types" value="land"> Land</label>
+              <label><input type="checkbox" name="property_types" value="mobile"> Mobile Home</label>
+              <label><input type="checkbox" name="property_types" value="commercial"> Commercial</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Counties / Markets You're Targeting</label>
+            <select name="target_counties" multiple size="8">
+              <option value="alachua">Alachua</option>
+              <option value="baker">Baker</option>
+              <option value="bay">Bay</option>
+              <option value="bradford">Bradford</option>
+              <option value="brevard">Brevard</option>
+              <option value="broward">Broward</option>
+              <option value="calhoun">Calhoun</option>
+              <option value="charlotte">Charlotte</option>
+              <option value="citrus">Citrus</option>
+              <option value="clay">Clay</option>
+              <option value="collier">Collier</option>
+              <option value="columbia">Columbia</option>
+              <option value="desoto">DeSoto</option>
+              <option value="dixie">Dixie</option>
+              <option value="duval">Duval</option>
+              <option value="escambia">Escambia</option>
+              <option value="flagler">Flagler</option>
+              <option value="franklin">Franklin</option>
+              <option value="gadsden">Gadsden</option>
+              <option value="gilchrist">Gilchrist</option>
+              <option value="glades">Glades</option>
+              <option value="gulf">Gulf</option>
+              <option value="hamilton">Hamilton</option>
+              <option value="hardee">Hardee</option>
+              <option value="hendry">Hendry</option>
+              <option value="hernando">Hernando</option>
+              <option value="highlands">Highlands</option>
+              <option value="hillsborough">Hillsborough</option>
+              <option value="holmes">Holmes</option>
+              <option value="indian_river">Indian River</option>
+              <option value="jackson">Jackson</option>
+              <option value="jefferson">Jefferson</option>
+              <option value="lafayette">Lafayette</option>
+              <option value="lake">Lake</option>
+              <option value="lee">Lee</option>
+              <option value="leon">Leon</option>
+              <option value="levy">Levy</option>
+              <option value="liberty">Liberty</option>
+              <option value="madison">Madison</option>
+              <option value="manatee">Manatee</option>
+              <option value="marion">Marion</option>
+              <option value="martin">Martin</option>
+              <option value="miami_dade">Miami-Dade</option>
+              <option value="monroe">Monroe</option>
+              <option value="nassau">Nassau</option>
+              <option value="okaloosa">Okaloosa</option>
+              <option value="okeechobee">Okeechobee</option>
+              <option value="orange">Orange</option>
+              <option value="osceola">Osceola</option>
+              <option value="palm_beach">Palm Beach</option>
+              <option value="pasco">Pasco</option>
+              <option value="pinellas">Pinellas</option>
+              <option value="polk">Polk</option>
+              <option value="putnam">Putnam</option>
+              <option value="st_johns">St. Johns</option>
+              <option value="st_lucie">St. Lucie</option>
+              <option value="santa_rosa">Santa Rosa</option>
+              <option value="sarasota">Sarasota</option>
+              <option value="seminole">Seminole</option>
+              <option value="sumter">Sumter</option>
+              <option value="suwannee">Suwannee</option>
+              <option value="taylor">Taylor</option>
+              <option value="union">Union</option>
+              <option value="volusia">Volusia</option>
+              <option value="wakulla">Wakulla</option>
+              <option value="walton">Walton</option>
+              <option value="washington">Washington</option>
+            </select>
+            <div class="field-hint">Hold Ctrl (Windows) or Cmd (Mac) to select more than one. All 67 Florida counties are listed.</div>
+          </div>
+
+          <div class="field">
+            <label>Price Range</label>
+            <select name="Price Range">
+              <option>Under $150,000</option>
+              <option>$150,000 – $300,000</option>
+              <option>$300,000 – $500,000</option>
+              <option>$500,000 – $1,000,000</option>
+              <option>Over $1,000,000</option>
+              <option>No fixed cap — I buy on spread/numbers</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Funding Source</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="Funding Source" value="Cash"> Cash</label>
+              <label><input type="checkbox" name="Funding Source" value="Hard Money"> Hard Money</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Anything else we should know about your buying criteria?</label>
+            <textarea name="required_spread_or_roi" rows="3" placeholder="Spread/ROI requirements, deal-structure preferences, inspection window, etc."></textarea>
+          </div>
+
+          <div class="submit-row">
+            <button type="submit" class="btn btn-navy" style="width:100%;">Submit My Buy Box</button>
+          </div>
+          <p class="form-note">By submitting, a copy of this form is sent directly to the Deal Vault team and logged in our system. We never sell or share your information.</p>
+        </form>
+
+        <div class="doc-links">
+          Prefer a document? <a href="documents/deal-vault-investor-questionnaire.docx">Download the fillable Investor Questionnaire (.docx)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHOLESALERS / OFF-MARKET AGENTS -->
+<section class="process" id="wholesalers">
+  <div class="container">
+    <div class="audience-block alt" style="flex-direction:row-reverse;">
+      <div class="copy reveal-right">
+        <div class="eyebrow">For Wholesalers &amp; Off-Market Agents</div>
+        <h2>Send Us Your Deal</h2>
+        <p>We work with a private network of vetted, ready investors across Florida. Fill out either form below directly online — no documents to download, print, or scan.</p>
+        <p>New to Deal Vault? Start with the intake form so your dedicated advisor understands how you work — then submit properties any time using the property form.</p>
+        <div class="transparency">
+          <strong>Full transparency:</strong> We don't charge wholesalers or agents anything to submit deals. We present your deals to buyers in our network who fit your criteria — any fee structure on your end is entirely yours to set. We also don't structure joint ventures, but there are plenty of other ways we can make a referral relationship work for both sides.
+        </div>
+      </div>
+      <div class="panel reveal-left">
+        <h4 style="color:var(--navy);margin-bottom:6px;">① Wholesaler / Off-Market Agent Intake</h4>
+        <p class="required-note">One-time — tells us how you work so we can send you the right buyers.</p>
+        <form action="https://formsubmit.co/casey@yourdealvault.com" method="POST" id="wholesaler-form">
+          <input type="hidden" name="_subject" value="New Wholesaler / Off-Market Agent Intake — Deal Vault Website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey2" style="display:none">
+          <input type="hidden" name="_next" value="https://yourdealvault.com/?submitted=1#wholesalers">
+          <input type="hidden" name="verification_status" value="unverified">
+          <input type="hidden" name="Form Type" value="Wholesaler/Off-Market Agent Intake">
+
+          <div class="row2">
+            <div class="field">
+              <label>First Name <span class="req">*</span></label>
+              <input type="text" name="firstname" required>
+            </div>
+            <div class="field">
+              <label>Last Name <span class="req">*</span></label>
+              <input type="text" name="lastname" required>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label>Email <span class="req">*</span></label>
+              <input type="email" name="email" required>
+            </div>
+            <div class="field">
+              <label>Phone</label>
+              <input type="tel" name="phone">
+            </div>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label>Company / Brokerage</label>
+              <input type="text" name="company">
+            </div>
+            <div class="field">
+              <label>Role</label>
+              <select name="network_role">
+                <option value="wholesaler">Wholesaler</option>
+                <option value="off_market_agent">Off-Market Agent</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Property Types You Typically Source</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="property_types" value="sfr"> SFR</label>
+              <label><input type="checkbox" name="property_types" value="multifamily"> Multifamily</label>
+              <label><input type="checkbox" name="property_types" value="land"> Land</label>
+              <label><input type="checkbox" name="property_types" value="mobile"> Mobile Home</label>
+              <label><input type="checkbox" name="property_types" value="commercial"> Commercial</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Counties / Markets You Source In</label>
+            <select name="target_counties" multiple size="8">
+              <option value="alachua">Alachua</option>
+              <option value="baker">Baker</option>
+              <option value="bay">Bay</option>
+              <option value="bradford">Bradford</option>
+              <option value="brevard">Brevard</option>
+              <option value="broward">Broward</option>
+              <option value="calhoun">Calhoun</option>
+              <option value="charlotte">Charlotte</option>
+              <option value="citrus">Citrus</option>
+              <option value="clay">Clay</option>
+              <option value="collier">Collier</option>
+              <option value="columbia">Columbia</option>
+              <option value="desoto">DeSoto</option>
+              <option value="dixie">Dixie</option>
+              <option value="duval">Duval</option>
+              <option value="escambia">Escambia</option>
+              <option value="flagler">Flagler</option>
+              <option value="franklin">Franklin</option>
+              <option value="gadsden">Gadsden</option>
+              <option value="gilchrist">Gilchrist</option>
+              <option value="glades">Glades</option>
+              <option value="gulf">Gulf</option>
+              <option value="hamilton">Hamilton</option>
+              <option value="hardee">Hardee</option>
+              <option value="hendry">Hendry</option>
+              <option value="hernando">Hernando</option>
+              <option value="highlands">Highlands</option>
+              <option value="hillsborough">Hillsborough</option>
+              <option value="holmes">Holmes</option>
+              <option value="indian_river">Indian River</option>
+              <option value="jackson">Jackson</option>
+              <option value="jefferson">Jefferson</option>
+              <option value="lafayette">Lafayette</option>
+              <option value="lake">Lake</option>
+              <option value="lee">Lee</option>
+              <option value="leon">Leon</option>
+              <option value="levy">Levy</option>
+              <option value="liberty">Liberty</option>
+              <option value="madison">Madison</option>
+              <option value="manatee">Manatee</option>
+              <option value="marion">Marion</option>
+              <option value="martin">Martin</option>
+              <option value="miami_dade">Miami-Dade</option>
+              <option value="monroe">Monroe</option>
+              <option value="nassau">Nassau</option>
+              <option value="okaloosa">Okaloosa</option>
+              <option value="okeechobee">Okeechobee</option>
+              <option value="orange">Orange</option>
+              <option value="osceola">Osceola</option>
+              <option value="palm_beach">Palm Beach</option>
+              <option value="pasco">Pasco</option>
+              <option value="pinellas">Pinellas</option>
+              <option value="polk">Polk</option>
+              <option value="putnam">Putnam</option>
+              <option value="st_johns">St. Johns</option>
+              <option value="st_lucie">St. Lucie</option>
+              <option value="santa_rosa">Santa Rosa</option>
+              <option value="sarasota">Sarasota</option>
+              <option value="seminole">Seminole</option>
+              <option value="sumter">Sumter</option>
+              <option value="suwannee">Suwannee</option>
+              <option value="taylor">Taylor</option>
+              <option value="union">Union</option>
+              <option value="volusia">Volusia</option>
+              <option value="wakulla">Wakulla</option>
+              <option value="walton">Walton</option>
+              <option value="washington">Washington</option>
+            </select>
+            <div class="field-hint">Hold Ctrl (Windows) or Cmd (Mac) to select more than one. All 67 Florida counties are listed.</div>
+          </div>
+
+          <div class="field">
+            <label>Typical Deal Volume</label>
+            <select name="Deal Volume">
+              <option>This will be my first deal with Deal Vault</option>
+              <option>1–2 deals per month</option>
+              <option>3–5 deals per month</option>
+              <option>6+ deals per month</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Anything else we should know about how you work?</label>
+            <textarea name="required_spread_or_roi" rows="3"></textarea>
+          </div>
+
+          <div class="submit-row">
+            <button type="submit" class="btn btn-navy" style="width:100%;">Submit Intake Form</button>
+          </div>
+          <p class="form-note">By submitting, a copy of this form is sent directly to the Deal Vault team and logged in our system. We never sell or share your information.</p>
+        </form>
+
+        <h4 style="color:var(--navy);margin:30px 0 6px;">② Submit a Property</h4>
+        <p class="required-note">Use this every time you have a new property for us to present.</p>
+        <form action="https://formsubmit.co/casey@yourdealvault.com" method="POST" id="property-form">
+          <input type="hidden" name="_subject" value="New Property Submission — Deal Vault Website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey3" style="display:none">
+          <input type="hidden" name="_next" value="https://yourdealvault.com/?submitted=1#wholesalers">
+          <input type="hidden" name="Form Type" value="Property Submission">
+
+          <div class="row2">
+            <div class="field">
+              <label>Your Name <span class="req">*</span></label>
+              <input type="text" name="Submitted By" id="pf-name" required>
+            </div>
+            <div class="field">
+              <label>Your Email <span class="req">*</span></label>
+              <input type="email" name="Submitter Email" id="pf-email" required>
+            </div>
+          </div>
+
+          <div id="property-gate-locked">
+            <div class="transparency" style="margin-top:0;">
+              <strong>One quick step first:</strong> to submit a property, please complete the Wholesaler / Off-Market Agent Intake form above (①) at least once. Already done that — on this device or a previous visit? Enter your name and email above and continue below.
+            </div>
+            <button type="button" class="btn btn-navy" id="pf-verify-btn" style="width:100%;margin-bottom:10px;">Continue to Property Submission</button>
+            <div id="pf-verify-fail" style="display:none;font-size:13px;color:#B3261E;margin-bottom:12px;">We don't see a completed intake form on this device for that email yet. Please complete the intake form above first, or confirm below if you've already submitted one previously.</div>
+            <label style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--muted);margin-bottom:10px;cursor:pointer;">
+              <input type="checkbox" id="pf-override" style="width:auto;margin-top:3px;"> I've already completed the intake form previously (possibly on another device)
+            </label>
+            <button type="button" class="btn btn-gold btn-sm" id="pf-override-btn" style="width:100%;display:none;">Continue Anyway</button>
+          </div>
+
+          <div id="property-gate-fields" style="display:none;">
+            <div class="field">
+              <label>Full Street Address <span class="req">*</span></label>
+              <input type="text" name="Property Address" placeholder="A full address is required — we can't underwrite without one.">
+            </div>
+
+            <div class="row2">
+              <div class="field">
+                <label>Asking Price <span class="req">*</span></label>
+                <input type="text" name="Asking Price">
+              </div>
+              <div class="field">
+                <label>ARV (if known)</label>
+                <input type="text" name="ARV">
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Is this on the MLS?</label>
+              <select name="MLS Status">
+                <option>No, fully off-market</option>
+                <option>Yes, active listing</option>
+                <option>Yes, pending / under contract with another buyer</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Do you have a signed contract or assignment agreement?</label>
+              <select name="Signed Contract">
+                <option>Yes, can provide a copy</option>
+                <option>Verbal agreement only, not yet signed</option>
+                <option>No</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Any known issues?</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="Known Issues" value="None known"> None known</label>
+                <label><input type="checkbox" name="Known Issues" value="Flood history"> Flood history</label>
+                <label><input type="checkbox" name="Known Issues" value="Foundation/structural"> Foundation / structural</label>
+                <label><input type="checkbox" name="Known Issues" value="Title or probate issue"> Title or probate issue</label>
+                <label><input type="checkbox" name="Known Issues" value="Code violations"> Code violations</label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Anything else we should know about this property?</label>
+              <textarea name="Additional Details" rows="3"></textarea>
+            </div>
+
+            <div class="submit-row">
+              <button type="submit" class="btn btn-navy" style="width:100%;">Submit Property</button>
+            </div>
+            <p class="form-note">By submitting, a copy of this form is sent directly to the Deal Vault team and logged in our system. We never sell or share your information.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Where We Operate</div>
+      <h2>Florida's Space Coast — and Beyond</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="area-wrap">
+      <div class="area-copy reveal-left">
+        <p>Deal Vault's roots are on <strong>Florida's Space Coast</strong>, and Brevard County remains the core of our network. From there, our reach extends across Central Florida and into select South Florida markets, following our investors' and wholesalers' actual buying criteria rather than an arbitrary boundary.</p>
+        <p>Don't see your county below? Submit your buy box or property anyway — our network is expanding continuously, and your dedicated advisor will tell you honestly whether it's a fit.</p>
+      </div>
+      <div class="county-cloud reveal-right">
+        <span class="county-chip core">Brevard</span>
+        <span class="county-chip core">Orange</span>
+        <span class="county-chip core">Seminole</span>
+        <span class="county-chip core">Osceola</span>
+        <span class="county-chip core">Polk</span>
+        <span class="county-chip core">Volusia</span>
+        <span class="county-chip core">Indian River</span>
+        <span class="county-chip core">St. Lucie</span>
+        <span class="county-chip core">Flagler</span>
+        <span class="county-chip">Alachua</span>
+        <span class="county-chip">Baker</span>
+        <span class="county-chip">Bay</span>
+        <span class="county-chip">Bradford</span>
+        <span class="county-chip">Broward</span>
+        <span class="county-chip">Calhoun</span>
+        <span class="county-chip">Charlotte</span>
+        <span class="county-chip">Citrus</span>
+        <span class="county-chip">Clay</span>
+        <span class="county-chip">Collier</span>
+        <span class="county-chip">Columbia</span>
+        <span class="county-chip">DeSoto</span>
+        <span class="county-chip">Dixie</span>
+        <span class="county-chip">Duval</span>
+        <span class="county-chip">Escambia</span>
+        <span class="county-chip">Franklin</span>
+        <span class="county-chip">Gadsden</span>
+        <span class="county-chip">Gilchrist</span>
+        <span class="county-chip">Glades</span>
+        <span class="county-chip">Gulf</span>
+        <span class="county-chip">Hamilton</span>
+        <span class="county-chip">Hardee</span>
+        <span class="county-chip">Hendry</span>
+        <span class="county-chip">Hernando</span>
+        <span class="county-chip">Highlands</span>
+        <span class="county-chip">Hillsborough</span>
+        <span class="county-chip">Holmes</span>
+        <span class="county-chip">Jackson</span>
+        <span class="county-chip">Jefferson</span>
+        <span class="county-chip">Lafayette</span>
+        <span class="county-chip">Lake</span>
+        <span class="county-chip">Lee</span>
+        <span class="county-chip">Leon</span>
+        <span class="county-chip">Levy</span>
+        <span class="county-chip">Liberty</span>
+        <span class="county-chip">Madison</span>
+        <span class="county-chip">Manatee</span>
+        <span class="county-chip">Marion</span>
+        <span class="county-chip">Martin</span>
+        <span class="county-chip">Miami-Dade</span>
+        <span class="county-chip">Monroe</span>
+        <span class="county-chip">Nassau</span>
+        <span class="county-chip">Okaloosa</span>
+        <span class="county-chip">Okeechobee</span>
+        <span class="county-chip">Palm Beach</span>
+        <span class="county-chip">Pasco</span>
+        <span class="county-chip">Pinellas</span>
+        <span class="county-chip">Putnam</span>
+        <span class="county-chip">St. Johns</span>
+        <span class="county-chip">Santa Rosa</span>
+        <span class="county-chip">Sarasota</span>
+        <span class="county-chip">Sumter</span>
+        <span class="county-chip">Suwannee</span>
+        <span class="county-chip">Taylor</span>
+        <span class="county-chip">Union</span>
+        <span class="county-chip">Wakulla</span>
+        <span class="county-chip">Walton</span>
+        <span class="county-chip">Washington</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE VALUES -->
+<section class="process" id="values">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Our Core Values</div>
+      <h2>What Guides How We Operate</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="values-grid reveal-stagger">
+      <div class="value-chip navy-card reveal" style="--i:0"><div class="v-icon">✓</div><h4>Integrity</h4><p>We do what we say we'll do, every time.</p></div>
+      <div class="value-chip gold-card reveal" style="--i:1"><div class="v-icon">◆</div><h4>Professionalism</h4><p>Clear, respectful, and reliable communication.</p></div>
+      <div class="value-chip navy-card reveal" style="--i:2"><div class="v-icon">♥</div><h4>Relationships Before Revenue</h4><p>We build partnerships, not just transactions.</p></div>
+      <div class="value-chip gold-card reveal" style="--i:3"><div class="v-icon">⚙</div><h4>Operational Excellence</h4><p>Precision and discipline in how we run our network.</p></div>
+      <div class="value-chip navy-card reveal" style="--i:4"><div class="v-icon">◎</div><h4>Transparency</h4><p>No hidden fees, no surprises — ever.</p></div>
+      <div class="value-chip gold-card reveal" style="--i:5"><div class="v-icon">↑</div><h4>Continuous Improvement</h4><p>We're always refining how we serve our network.</p></div>
+      <div class="value-chip navy-card reveal" style="--i:6"><div class="v-icon">∞</div><h4>Long-Term Partnerships</h4><p>We're building relationships that outlast any single deal.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Frequently Asked Questions</div>
+      <h2>Straight Answers, No Fine Print Games</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-q">Is there a cost to submit my buy box or a property? <span class="plus">+</span></div>
+        <div class="faq-a"><p>No. Submitting your buy box as an investor, or a property as a wholesaler or agent, costs nothing. Investors pay a finder's fee of approximately 1%–1.5% only if a deal we source actually closes — the exact fee varies by deal, city, and relationship, and is always confirmed upfront.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How fast will I hear back after submitting? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Submissions are reviewed on an ongoing basis as part of our vetting process. Your dedicated advisor will reach out once your buy box or property has been reviewed — sooner for time-sensitive property submissions.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does Deal Vault represent the buyer or the seller? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Deal Vault operates as a deal-flow and investor-relations network, not a traditional brokerage representing one side of a transaction. Our role is to responsibly match vetted opportunity with vetted capital.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Will Deal Vault structure a joint venture with me? <span class="plus">+</span></div>
+        <div class="faq-a"><p>We don't structure joint ventures. We do build referral relationships — send us deals that fit our network's criteria, and we'll get them in front of qualified buyers.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What happens with my information after I submit a form? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Your submission goes directly to our team and is logged in our internal system so your dedicated advisor has full context. We never sell or share your information with third parties.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is the Investment Estimator on this site guaranteed to be accurate? <span class="plus">+</span></div>
+        <div class="faq-a"><p>No — it's an estimation tool built on adjustable assumptions and approximate average county tax rates, intended to help you get oriented quickly. Always confirm real numbers with your advisor and a licensed professional before making a decision.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT US / TEAM -->
+<section class="process" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">About Us</div>
+      <h2>The Team Behind Deal Vault</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="team reveal-stagger">
+      <div class="team-card reveal" style="--i:0">
+        <div class="photo-wrap"><img class="photo" src="assets/cole-nichter.jpg" alt="Cole Nichter"></div>
+        <div class="info">
+          <h4>Cole Nichter</h4>
+          <div class="role">Co-Founder</div>
+          <div class="bio-full">
+            <p style="margin-bottom:8px;"><strong>(2025) Space Coast Real Producers 40 Under 40 Award Winner.</strong></p>
+            <p>Since 2016, Cole has dedicated his life to Entrepreneurship and the Real Estate industry. He has built and scaled multiple businesses across acquisitions, wholesaling, and investor relations, developing a deep network of investors, wholesalers, and off-market real estate professionals throughout Florida. Cole co-founded Deal Vault to bring structure, trust, and consistency to how off-market deal flow reaches serious capital — building long-term relationships over one-off transactions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="team-card reveal" style="--i:1">
+        <div class="photo-wrap"><img class="photo" src="assets/lily-ingeldsen.jpg" alt="Lily Ingeldsen"></div>
+        <div class="info">
+          <h4>Lily Ingeldsen</h4>
+          <div class="role">Co-Founder</div>
+          <div class="bio-full">
+            <p>Lily Ingeldsen co-founded Deal Vault after building a reputation across Florida's Space Coast as a relationship-first real estate professional. She's the Co-Founder of The Golden Estates Team, where she's helped buyers and sellers navigate some of the market's most competitive transactions across Brevard County and beyond.</p>
+            <p style="margin-top:8px;">Known for pairing sharp market knowledge with genuine care for the people on the other side of the table, Lily brings that same standard to Deal Vault's investor and wholesaler network — building the kind of trust and transparency the company is built on.</p>
+          </div>
+        </div>
+      </div>
+      <div class="team-card reveal" style="--i:2">
+        <div class="photo-wrap"><img class="photo" src="assets/casey-arroyo.jpg" alt="Casey Arroyo"></div>
+        <div class="info">
+          <h4>Casey Arroyo</h4>
+          <div class="role">Director of Investor Relations</div>
+          <div class="bio-full">
+            <p>As Director of Investor Relations, Casey is the driving force behind the daily relationships that keep the Deal Vault network running. He personally vets new investors and wholesalers, matches real off-market opportunities with the right capital, and makes sure every deal moving through Deal Vault is handled with transparency and professionalism from first contact through closing.</p>
+            <p style="margin-top:8px;">Casey built Deal Vault's investor-relations process from the ground up, with a relentless focus on cutting out the noise — no tire kickers, no wasted time, just real deals for real buyers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">What Our Network Says</div>
+      <h2>Trust, in Their Own Words</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="testi-grid reveal-stagger">
+      <div class="testi-card reveal" style="--i:0">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="quote-text">Deal Vault is seriously a game changer. I've found deals I never would've discovered on my own and saved way more time than I expected.</p>
+        <div class="author">— Ashley H.</div>
+      </div>
+      <div class="testi-card reveal" style="--i:1">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="quote-text">I honestly can't believe some of the deals I've found through Deal Vault. It's become one of the first places I check before buying anything.</p>
+        <div class="author">— Robert C.</div>
+      </div>
+      <div class="testi-card reveal" style="--i:2">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="quote-text">Deal Vault makes saving money feel effortless. The deals are incredible, the value is real, and I've already gotten way more than I expected out of it.</p>
+        <div class="author">— Jorge L.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<div class="cta-banner">
+  <div class="container">
+    <h3>Your Next Off-Market Deal Is Waiting</h3>
+    <p>Whether you're bringing capital or bringing a deal, your dedicated advisor is ready.</p>
+    <div class="hero-ctas">
+      <a href="#investors" class="btn btn-gold">I'm an Investor</a>
+      <a href="#wholesalers" class="btn btn-outline">I Have a Deal</a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="contact-band" id="contact">
+  <div class="container">
+    <h2>Have a Question, or Ready to Get Started?</h2>
+    <p>Reach out directly — your dedicated advisor will respond.</p>
+    <div class="contact-links">
+      <a href="mailto:casey@yourdealvault.com">✉ casey@yourdealvault.com</a>
+      <a href="tel:+13213451309">☎ 321-345-1309</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="tagline">Connecting Opportunity with Capital.</div>
+    <div class="disclaimer">Information is deemed to be reliable, but is not guaranteed. All property, pricing, investment, and estimator figures presented by Deal Vault LLC are provided for general informational purposes only, are not guaranteed, and do not constitute an offer, solicitation, or financial, tax, or investment advice. Deal Vault's finder's fee is approximately 1%–1.5% of the closing price and varies by deal, city, and relationship.</div>
+    <div style="margin-bottom:10px;"><a href="privacy-policy.html" style="color:#A7B2C4;margin:0 10px;">Privacy Policy</a> · <a href="terms-and-conditions.html" style="color:#A7B2C4;margin:0 10px;">Terms &amp; Conditions</a> · <a href="disclosures.html" style="color:#A7B2C4;margin:0 10px;">Disclosures</a></div>
+    <div>&copy; 2026 Deal Vault LLC. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- FLOATING CTA -->
+<a href="#investors" class="float-cta" id="floatCta">⚡ Submit Your Buy Box</a>
+<div id="floatToTop" title="Back to top">↑</div>
+
+<script>
+  // Nav shrink-on-scroll + floating CTA visibility
+  var nav = document.getElementById('siteNav');
+  var floatCta = document.getElementById('floatCta');
+  var floatToTop = document.getElementById('floatToTop');
+  var scrollProgress = document.getElementById('scrollProgress');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 40){ nav.classList.add('scrolled'); } else { nav.classList.remove('scrolled'); }
+    if(window.scrollY > 700){ floatCta.classList.add('show'); floatToTop.classList.add('show'); }
+    else { floatCta.classList.remove('show'); floatToTop.classList.remove('show'); }
+    var docEl = document.documentElement;
+    var scrollable = docEl.scrollHeight - docEl.clientHeight;
+    var pct = scrollable > 0 ? (docEl.scrollTop / scrollable) * 100 : 0;
+    scrollProgress.style.width = pct + '%';
+  });
+  floatToTop.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Hero cursor spotlight
+  var heroEl = document.querySelector('.hero');
+  var spotlightEl = document.getElementById('heroSpotlight');
+  if(heroEl && spotlightEl){
+    heroEl.addEventListener('mousemove', function(e){
+      var rect = heroEl.getBoundingClientRect();
+      spotlightEl.style.left = (e.clientX - rect.left) + 'px';
+      spotlightEl.style.top = (e.clientY - rect.top) + 'px';
+    });
+  }
+
+  // 3D tilt on team + testimonial cards
+  function apply3DTilt(selector){
+    document.querySelectorAll(selector).forEach(function(card){
+      card.addEventListener('mousemove', function(e){
+        var rect = card.getBoundingClientRect();
+        var x = e.clientX - rect.left, y = e.clientY - rect.top;
+        var cx = rect.width / 2, cy = rect.height / 2;
+        var rotateX = ((y - cy) / cy) * -6;
+        var rotateY = ((x - cx) / cx) * 6;
+        card.style.transform = 'perspective(900px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) translateY(-6px)';
+      });
+      card.addEventListener('mouseleave', function(){ card.style.transform = ''; });
+    });
+  }
+  apply3DTilt('.team-card');
+  apply3DTilt('.testi-card');
+
+  // Hero blob parallax
+  var blobs = document.querySelectorAll('.hero-blob');
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY;
+    blobs.forEach(function(b, i){
+      b.style.transform = 'translateY(' + (y * (0.08 + i*0.03)) + 'px)';
+    });
+  });
+
+  // Scroll-reveal via IntersectionObserver
+  var revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add('in-view');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(function(el){ io.observe(el); });
+
+  // Animated count-up for stats
+  var countEls = document.querySelectorAll('.num[data-count]');
+  var counted = false;
+  var statsSection = document.getElementById('track-record');
+  var countIo = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting && !counted){
+        counted = true;
+        countEls.forEach(function(el){
+          var target = parseInt(el.getAttribute('data-count'), 10);
+          var prefix = el.getAttribute('data-prefix') || '';
+          var suffix = el.getAttribute('data-suffix') || '';
+          var duration = 1500;
+          var startTime = null;
+          function step(ts){
+            if(!startTime) startTime = ts;
+            var progress = Math.min((ts - startTime) / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            var val = Math.floor(eased * target);
+            el.textContent = prefix + val + suffix;
+            if(progress < 1){ requestAnimationFrame(step); } else { el.textContent = prefix + target + suffix; }
+          }
+          requestAnimationFrame(step);
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+  if(statsSection) countIo.observe(statsSection);
+
+  // Compose structured summary into required_spread_or_roi before submit (best-effort enrichment)
+  function enrichBuyBox(form, priceFieldName, fundingFieldName, notesFieldName){
+    form.addEventListener('submit', function(){
+      var priceEl = form.querySelector('[name="' + priceFieldName + '"]');
+      var fundingEls = form.querySelectorAll('[name="' + fundingFieldName + '"]:checked');
+      var notesEl = form.querySelector('[name="' + notesFieldName + '"]');
+      if(!notesEl) return;
+      var price = priceEl ? priceEl.value : '';
+      var funding = Array.prototype.map.call(fundingEls, function(el){ return el.value; }).join(', ');
+      var parts = [];
+      if(price) parts.push('Price Range: ' + price);
+      if(funding) parts.push('Funding: ' + funding);
+      if(notesEl.value) parts.push('Notes: ' + notesEl.value);
+      notesEl.value = parts.join(' | ');
+    }, true);
+  }
+  var bb = document.getElementById('buybox-form');
+  if(bb) enrichBuyBox(bb, 'Price Range', 'Funding Source', 'required_spread_or_roi');
+
+  // Track completed Wholesaler/Off-Market Agent Intake submissions locally, so the
+  // Property Submission form (below) can auto-unlock for repeat submitters. This is a
+  // best-effort, same-device check only — there is no live database lookup from a static
+  // page, so a manual "I already submitted" override is also provided.
+  var wf = document.getElementById('wholesaler-form');
+  if(wf){
+    wf.addEventListener('submit', function(){
+      var fnEl = wf.querySelector('[name="firstname"]');
+      var lnEl = wf.querySelector('[name="lastname"]');
+      var emEl = wf.querySelector('[name="email"]');
+      var name = ((fnEl?fnEl.value:'') + ' ' + (lnEl?lnEl.value:'')).trim();
+      var email = emEl ? emEl.value.trim() : '';
+      if(email){
+        localStorage.setItem('dealvault_intake', JSON.stringify({ name: name, email: email, ts: Date.now() }));
+      }
+    }, true);
+  }
+
+  // Property Submission gate
+  (function(){
+    var locked = document.getElementById('property-gate-locked');
+    var fields = document.getElementById('property-gate-fields');
+    var nameEl = document.getElementById('pf-name');
+    var emailEl = document.getElementById('pf-email');
+    var verifyBtn = document.getElementById('pf-verify-btn');
+    var verifyFail = document.getElementById('pf-verify-fail');
+    var overrideCheck = document.getElementById('pf-override');
+    var overrideBtn = document.getElementById('pf-override-btn');
+    if(!locked || !fields) return;
+
+    function unlock(selfReported){
+      locked.style.display = 'none';
+      fields.style.display = 'block';
+      fields.querySelectorAll('input,select,textarea').forEach(function(el){
+        if(el.dataset.wasRequired === '1') el.setAttribute('required','required');
+      });
+      if(selfReported){
+        var note = document.createElement('input');
+        note.type = 'hidden';
+        note.name = 'Intake Verification';
+        note.value = 'Self-reported as already submitted — not system-verified, please confirm manually';
+        document.getElementById('property-form').appendChild(note);
+      }
+    }
+
+    verifyBtn.addEventListener('click', function(){
+      var email = (emailEl.value || '').trim().toLowerCase();
+      if(!nameEl.value.trim() || !email){ alert('Please enter your name and email first.'); return; }
+      var stored = localStorage.getItem('dealvault_intake');
+      if(stored){
+        try{
+          var data = JSON.parse(stored);
+          if(data.email && data.email.toLowerCase() === email){ unlock(false); return; }
+        }catch(e){}
+      }
+      verifyFail.style.display = 'block';
+    });
+
+    overrideCheck.addEventListener('change', function(){
+      overrideBtn.style.display = this.checked ? 'block' : 'none';
+    });
+    overrideBtn.addEventListener('click', function(){
+      if(!nameEl.value.trim() || !emailEl.value.trim()){ alert('Please enter your name and email first.'); return; }
+      localStorage.setItem('dealvault_intake', JSON.stringify({ name: nameEl.value.trim(), email: emailEl.value.trim(), ts: Date.now(), selfReported: true }));
+      unlock(true);
+    });
+
+    // Auto-unlock on load if this device already has a matching intake on file
+    var existing = localStorage.getItem('dealvault_intake');
+    if(existing){
+      try{
+        var d = JSON.parse(existing);
+        if(d.email){
+          nameEl.value = d.name || '';
+          emailEl.value = d.email || '';
+          unlock(false);
+        }
+      }catch(e){}
+    }
+  })();
+
+  // On-page confirmation banner if redirected back with ?submitted=1
+  if(window.location.search.includes('submitted=1')){
+    var banner = document.getElementById('confirm-banner');
+    if(banner){
+      banner.style.display = 'block';
+      document.getElementById('investors').scrollIntoView();
+    }
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.addEventListener('click', function(){
+      var item = q.parentElement;
+      var wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(i){ i.classList.remove('open'); });
+      if(!wasOpen) item.classList.add('open');
+    });
+  });
+
+  // County -> tax rate autofill
+  var countySel = document.getElementById('c-county');
+  var taxRateInput = document.getElementById('c-taxrate');
+  if(countySel){
+    countySel.addEventListener('change', function(){
+      if(this.value){ taxRateInput.value = this.value; runCalc(); }
+    });
+  }
+
+  // Investment Estimator calculator
+  function fmtUSD(n){
+    if(isNaN(n) || !isFinite(n)) n = 0;
+    return '$' + Math.round(n).toLocaleString('en-US');
+  }
+  function fmtPct(n){
+    if(isNaN(n) || !isFinite(n)) n = 0;
+    return n.toFixed(1) + '%';
+  }
+  function flash(el){
+    el.classList.add('flash');
+    setTimeout(function(){ el.classList.remove('flash'); }, 400);
+  }
+  function num(id){ var v = parseFloat(document.getElementById(id).value); return isNaN(v) ? 0 : v; }
+
+  function runCalc(){
+    var price = num('c-price');
+    var rehab = num('c-rehab');
+    var arv = num('c-arv');
+    var taxRate = num('c-taxrate');
+    var closingPct = num('c-closingpct');
+    var rent = num('c-rent');
+    var expenses = num('c-expenses');
+    var cash = num('c-cash');
+    var countySel = document.getElementById('c-county');
+    var isMiamiDade = countySel && countySel.options[countySel.selectedIndex] && countySel.options[countySel.selectedIndex].text === 'Miami-Dade';
+    var docStampRate = isMiamiDade ? 0.60 : 0.70;
+
+    var annualTax = price * (taxRate/100);
+    var docStamps = (price/100) * docStampRate;
+    var closingCosts = (price * (closingPct/100)) + docStamps;
+    var feeLow = price * 0.01;
+    var feeHigh = price * 0.015;
+
+    var annualRent = rent * 12;
+    var annualExpenses = expenses * 12;
+    var noi = annualRent - annualExpenses - annualTax;
+    var capRate = price > 0 ? (noi / price) * 100 : 0;
+    var cashOnCash = cash > 0 ? (noi / cash) * 100 : 0;
+
+    var allInCost = price + rehab + closingCosts + feeHigh;
+    var profit = arv > 0 ? (arv - allInCost) : 0;
+
+    var outputs = {
+      'o-tax': fmtUSD(annualTax),
+      'o-docstamps': fmtUSD(docStamps),
+      'o-closing': fmtUSD(closingCosts),
+      'o-fee': fmtUSD(feeLow) + ' – ' + fmtUSD(feeHigh),
+      'o-noi': fmtUSD(noi),
+      'o-cap': fmtPct(capRate),
+      'o-coc': fmtPct(cashOnCash),
+      'o-allin': fmtUSD(allInCost),
+      'o-profit': fmtUSD(profit)
+    };
+    Object.keys(outputs).forEach(function(id){
+      var el = document.getElementById(id);
+      if(el.textContent !== outputs[id]){ el.textContent = outputs[id]; flash(el); }
+    });
+  }
+  ['c-price','c-rehab','c-arv','c-taxrate','c-closingpct','c-rent','c-expenses','c-cash'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.addEventListener('input', runCalc);
+  });
+  runCalc();
+
+  // Buyer Printout — assembles the calculator + optional property details into the
+  // Deal Vault property package format, then opens the browser print dialog (Save as PDF).
+  var printoutBtn = document.getElementById('printout-btn');
+  if(printoutBtn){
+    printoutBtn.addEventListener('click', function(){
+      function g(id){ var el = document.getElementById(id); return el ? el.value.trim() : ''; }
+      function money(v){ var n = parseFloat(v); return isNaN(n) ? '' : '$' + Math.round(n).toLocaleString('en-US'); }
+      function row(label, val){ return '<tr><td>' + label + '</td><td>' + val + '</td></tr>'; }
+
+      var address = g('p-address') || 'Address Not Provided';
+      var ptype = g('p-type');
+      document.getElementById('p-out-address').textContent = address;
+      document.getElementById('p-out-type').textContent = ptype ? ('Investment Opportunity — ' + ptype) : 'Investment Opportunity';
+
+      var snapRows = [];
+      if(ptype) snapRows.push(row('Property Type', ptype));
+      var construction = g('p-construction'); if(construction) snapRows.push(row('Construction', construction));
+      var yearBuilt = g('p-yearbuilt'); if(yearBuilt) snapRows.push(row('Year Built', yearBuilt));
+      var bedsBaths = g('p-bedsbaths'); if(bedsBaths) snapRows.push(row('Bedrooms / Bathrooms', bedsBaths));
+      var sqft = g('p-sqft'); if(sqft) snapRows.push(row('Living Area', sqft + ' sqft'));
+      var lotSize = g('p-lotsize'); if(lotSize) snapRows.push(row('Lot Size', lotSize + ' sqft'));
+      var countySelEl = document.getElementById('c-county');
+      var countyText = countySelEl && countySelEl.options[countySelEl.selectedIndex] ? countySelEl.options[countySelEl.selectedIndex].text : '';
+      if(countyText && countyText.indexOf('Select county') === -1) snapRows.push(row('County', countyText));
+      document.querySelector('#p-out-snapshot tbody').innerHTML = snapRows.join('') || row('Details', 'Not provided — see Terms below.');
+
+      var priceRows = [];
+      var priceVal = g('c-price'); if(priceVal) priceRows.push(row('Price', money(priceVal)));
+      var arvVal = g('c-arv'); if(arvVal) priceRows.push(row('ARV (estimated)', money(arvVal)));
+      var emdVal = g('c-emd'); if(emdVal) priceRows.push(row('Earnest Money Deposit (EMD)', money(emdVal)));
+      var feeText = document.getElementById('o-fee').textContent;
+      priceRows.push(row('Deal Vault Network Fee (estimated)', feeText + ' — paid at closing, not upfront'));
+      priceRows.push(row('Est. Closing Costs', document.getElementById('o-closing').textContent));
+      priceRows.push(row('Est. Annual Property Tax', document.getElementById('o-tax').textContent));
+      document.querySelector('#p-out-pricing tbody').innerHTML = priceRows.join('');
+
+      var notes = g('p-notes');
+      var condWrap = document.getElementById('p-out-condition-wrap');
+      if(notes){ condWrap.style.display = 'block'; document.getElementById('p-out-condition').textContent = notes; }
+      else{ condWrap.style.display = 'none'; }
+
+      var terms = [];
+      var titleCo = g('p-title'); if(titleCo) terms.push('<li>Title company: ' + titleCo + '</li>');
+      terms.push('<li>Access to the property is coordinated through your dedicated advisor.</li>');
+      terms.push('<li>All figures above are estimates only — final terms are confirmed by your dedicated advisor before any agreement.</li>');
+      document.getElementById('p-out-terms').innerHTML = terms.join('');
+
+      var preparedFor = g('p-preparedfor');
+      document.getElementById('p-out-preparedfor').textContent = preparedFor ? ('Prepared for: ' + preparedFor) : '';
+      document.getElementById('p-out-date').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+      window.print();
+    });
+  }
+</script>
+
+</body>
+</html>
