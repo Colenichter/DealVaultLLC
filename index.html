@@ -746,7 +746,7 @@
   <div class="p-footer">
     <p><strong>PLEASE NOTE:</strong> All figures on this summary are estimates for illustrative purposes only, generated from assumptions you entered and approximate average county data. Nothing here is guaranteed and none of it constitutes financial, tax, or legal advice. Deal Vault's finder's fee (shown above) varies by deal, city, and relationship. Information is deemed to be reliable, but is not guaranteed.</p>
     <p id="p-out-preparedfor"></p>
-    <p>Prepared via yourdealvault.com &bull; <span id="p-out-date"></span> &bull; casey@yourdealvault.com &bull; 321-345-1309</p>
+    <p>Prepared via dealvault.info &bull; <span id="p-out-date"></span> &bull; casey@yourdealvault.com &bull; 321-345-1309</p>
   </div>
 </div>
 
@@ -767,7 +767,7 @@
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="_honey4" style="display:none">
-          <input type="hidden" name="_next" value="https://yourdealvault.com/?submitted=1&form=package#calculator">
+          <input type="hidden" name="_next" value="https://dealvault.info/?submitted=1&form=package#calculator">
           <input type="hidden" name="Form Type" value="Property Package Request">
           <div class="row2">
             <div class="field">
@@ -817,7 +817,7 @@
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="_honey" style="display:none">
-          <input type="hidden" name="_next" value="https://yourdealvault.com/?submitted=1#investors">
+          <input type="hidden" name="_next" value="https://dealvault.info/?submitted=1#investors">
           <input type="hidden" name="network_role" value="investor">
           <input type="hidden" name="verification_status" value="unverified">
           <input type="hidden" name="Form Type" value="Investor Buy Box">
@@ -1002,7 +1002,7 @@
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="_honey2" style="display:none">
-          <input type="hidden" name="_next" value="https://yourdealvault.com/?submitted=1#wholesalers">
+          <input type="hidden" name="_next" value="https://dealvault.info/?submitted=1#wholesalers">
           <input type="hidden" name="verification_status" value="unverified">
           <input type="hidden" name="Form Type" value="Wholesaler/Off-Market Agent Intake">
 
@@ -1154,7 +1154,7 @@
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="_honey3" style="display:none">
-          <input type="hidden" name="_next" value="https://yourdealvault.com/?submitted=1#wholesalers">
+          <input type="hidden" name="_next" value="https://dealvault.info/?submitted=1#wholesalers">
           <input type="hidden" name="Form Type" value="Property Submission">
 
           <div class="row2">
@@ -1632,6 +1632,29 @@
       }
     }, true);
   }
+
+  // Google Sheets logging (in addition to, not instead of, FormSubmit + HubSpot).
+  // This only ADDS a background beacon on submit - it never calls preventDefault(),
+  // so it can't block or interfere with the existing FormSubmit POST or HubSpot's
+  // form-collection tracking. Paste your Apps Script Web App URL below (ends in /exec).
+  var GSHEET_LOG_URL = 'https://script.google.com/macros/s/AKfycbxUZ6uAASYu9INLSYAywxv5R45WHRlTXkRcijo3MYesvpNskkxEDSGCIiHc9cuLv-HN/exec';
+  function logToGoogleSheet(form){
+    form.addEventListener('submit', function(){
+      if(!GSHEET_LOG_URL || GSHEET_LOG_URL.indexOf('PASTE_YOUR') === 0) return;
+      try {
+        var data = new FormData(form);
+        if(navigator.sendBeacon){
+          navigator.sendBeacon(GSHEET_LOG_URL, data);
+        } else {
+          fetch(GSHEET_LOG_URL, { method:'POST', body:data, mode:'no-cors', keepalive:true });
+        }
+      } catch(err) { /* never let logging break the real submission */ }
+    }, true);
+  }
+  ['package-form','buybox-form','wholesaler-form','property-form'].forEach(function(id){
+    var f = document.getElementById(id);
+    if(f) logToGoogleSheet(f);
+  });
 
   // Property Submission gate
   (function(){
